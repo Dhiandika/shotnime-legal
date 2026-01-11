@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #2563eb;
+    --text-color: #1f2937;
+    --text-light: #6b7280;
+    --bg-color: #ffffff;
+    --bg-secondary: #f3f4f6;
+    --border-color: #e5e7eb;
+    --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    letter-spacing: -0.025em;
+}
+
+.site-header nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.site-header nav a:hover,
+.site-header nav a.active {
+    color: var(--text-color);
+}
+
+/* Main Content */
+.content-wrapper {
+    padding: 60px 0;
+    min-height: 80vh;
+}
+
+.legal-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.legal-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -0.025em;
+}
+
+.last-updated {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.legal-content h2 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    color: var(--text-color);
+}
+
+.legal-content p {
+    margin-bottom: 16px;
+    color: var(--text-light);
+}
+
+.legal-content ul {
+    margin-bottom: 24px;
+    padding-left: 24px;
+    color: var(--text-light);
+}
+
+.legal-content li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--bg-secondary);
+    padding: 40px 0;
+    margin-top: auto;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
