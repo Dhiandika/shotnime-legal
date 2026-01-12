@@ -3,53 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shotnime - Terms of Service</title>
+    <title>Terms of Service - Shotnime</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                Shot<span>nime</span>
+            </a>
+            <button class="mobile-toggle">☰</button>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="dropdown">
+                    <span class="nav-link dropdown-trigger active">Legal ▾</span>
+                    <div class="dropdown-menu">
+                        <a href="privacy.html" class="dropdown-item">Privacy Policy</a>
+                        <a href="terms.html" class="dropdown-item active">Terms of Service</a>
+                    </div>
+                </div>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
         <div class="container">
-            <div class="logo">Shotnime</div>
-            <nav>
-                <a href="index.html">Privacy Policy</a>
-                <a href="terms.html" class="active">Terms of Service</a>
-            </nav>
+            <h1>Terms of Service</h1>
+            <p class="meta-info">Last Updated: January 12, 2026</p>
         </div>
     </header>
 
-    <main class="content-wrapper">
-        <div class="container">
-            <div class="legal-header">
-                <h1>Terms of Service</h1>
-                <p class="last-updated">Last Updated: January 11, 2026</p>
-            </div>
+    <main class="document-content">
+        <h2>1. Acceptance of Terms</h2>
+        <p>By accessing and using Shotnime (the "Service"), you accept and agree to be bound by the terms and provision of this agreement.</p>
 
-            <section class="legal-content">
-                <h2>1. Acceptance of Terms</h2>
-                <p>By accessing and using Shotnime ("the App"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the App.</p>
-                
-                <h2>2. Use License</h2>
-                <p>Shotnime is intended for internal or personal use as specified. You may not modify, distribute, or reverse engineer the application without explicit permission.</p>
+        <h2>2. Use License</h2>
+        <p>Permission is granted to use Shotnime for personal, non-commercial transitory viewing and content management only. This is the grant of a license, not a transfer of title, and under this license you may not:</p>
+        <ul>
+            <li>modify or copy the materials;</li>
+            <li>use the materials for any commercial purpose;</li>
+            <li>attempt to decompile or reverse engineer any software contained in Shotnime.</li>
+        </ul>
 
-                <h2>3. User Responsibilities</h2>
-                <p>You correspond that you will not use the App for any illegal or unauthorized purpose. You agree to comply with all laws, rules, and regulations applicable to your use of the App.</p>
+        <h2>3. Disclaimer</h2>
+        <p>The materials on Shotnime are provided "as is". Shotnime makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property.</p>
 
-                <h2>4. Disclaimer</h2>
-                <p>buffer The materials on Shotnime are provided on an 'as is' basis. Shotnime makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
-
-                <h2>5. Contact</h2>
-                <p>If you have any questions about these Terms, please contact us at support@shotnime.com.</p>
-            </section>
-        </div>
+        <h2>4. Limitations</h2>
+        <p>In no event shall Shotnime be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the Service.</p>
+        
+        <h2>5. Governing Law</h2>
+        <p>These terms and conditions are governed by and construed in accordance with the laws of Indonesia and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>
     </main>
 
-    <footer class="site-footer">
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Shotnime. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shotnime Inc. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
